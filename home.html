@@ -1,0 +1,122 @@
+{% load static%}
+
+<!--
+<link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+
+<h3>Hello world !</h3>
+
+<img src="{% static '/images/myimg.jpg' %}">
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jaikumar</title>
+        <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">   
+    </head>
+    <body>
+        <div class = 'container'>
+            <br>
+            <div class='row'>
+                <div class='col-md-3'>
+                    <div class='card card-body border-info h-100' id='profile-wrapper' >
+                        <img id = 'profile-pic' src="{% static '/images/pf.jpg' %}">
+                        <hr>
+                        <h4>Hi I'm Jaikumar</h4>
+                        <p>I love coding and building projects</p>
+                    </div>
+                </div>
+                <div class='col-md-9'>
+                    <div class='card card-body border-info h-100'>
+                        <h4>What I Know</h4>
+                        <hr>    
+                        <p>~Python, Django, HTML/CSS, Bootstrap.</p>
+                        <p>~PS: Working on JavaScript/Jquery, React and Postgres.</p>
+                        <p>~Certified as <a target="_blank" href="https://drive.google.com/file/d/10Xq036OaV7uLchNdnFV7PNouojXtEbUo/view">
+                            MTA(Microsoft Techonology Associate)</a> in 
+                            'Python Programming' by Microsoft.</p>
+                        <p>~<a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/3WAKE5LJDMR3">'Google Cloud Platform Fundamentals: Core Infrastructure'</a>
+                            Certification by Google Cloud.</p>
+                        <ul class='social-links'>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/jaikumar-rachamalla-2557aa102/">
+                                <img class="social" src="{% static 'images/linkedin.png' %}"></a>
+                            </li>
+                            <li><a target="_blank" href="https://github.com/itsjaikumar">
+                            <img class="social" src="{% static 'images/github.png' %}"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="text-center">
+              <h2>My projects</h2>
+            </div>
+            <br>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='card card-body h-100' >
+                        <h4>ToDo Application</h4>
+                        <hr>    
+                        <p>It is a basic To-Do App that handles simple 
+                            Create, Update and Delete day to day operations.</p>
+                        <p>Tools used: Python, Django, HTML, CSS, Bootstrap, Sqlite</p>
+                        <a target="_blank" class=" btn btn-primary btn-sm btn-info" 
+                        href="https://jaikumar-todo.herokuapp.com/">Application</a>
+                        <a target="_blank" class=" btn btn-primary btn-sm btn-info" 
+                        href="https://github.com/itsjaikumar/todo">Download Code</a>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='card card-body h-100'  >
+                        <h4>Customer Management Application</h4>
+                        <hr>    
+                        <p>It is used to store the customer information in the database and user will 
+                            have the ability to create customer, customer products, updating, deleting and 
+                            checking the status of the product </p>
+                        <p>Tools used: Python, Django, HTML, CSS, JavaScript, Bootstrap, Sqlite</p>
+                        <a target="_blank" class=" btn btn-primary btn-sm btn-info" 
+                        href="https://jaikumar-crm1.herokuapp.com/login/">Application</a>
+                        <a target="_blank" class=" btn btn-primary btn-sm btn-info" 
+                        href="https://github.com/itsjaikumar/customer_app">Download Code</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='card card-body h-100'>
+                        <h4>Polling Application</h4>
+                        <hr>    
+                        <p>It is basic polling app which allows us to add questions, votes on them, 
+                            seeing the results by means of numeric data and also 
+                            bargraph representation of votes  </p>
+                        <p>Tools used: Python, Django, HTML, CSS, Bootstrap, Sqlite</p>
+                        <a target="_blank" class=" btn btn-primary btn-sm btn-info" 
+                        href="https://jaikumar-pollster.herokuapp.com/">Application</a>
+                        <a target="_blank" class=" btn btn-primary btn-sm btn-info" 
+                        href="https://github.com/itsjaikumar/poll_app">Download Code</a>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='card card-body h-100'  >
+                        <h4>E-learning Application</h4>
+                        <hr>    
+                        <p>It is a basic E-learning platform where teacher can upload lessons, 
+                            videos and students can view them by logging in. 
+                            Teacher will have an access to update and delete the lessons 
+                            where, students are not authorized to do that.
+                        </p>
+                        <p>Tools used: Python, Django, HTML, CSS, JS, Bootstrap, Sqlite</p>
+                        <a target="_blank" class=" btn btn-primary btn-sm btn-info" 
+                        href="https://jaikumar-e-learn-app.herokuapp.com/">Application</a>
+                        <a target="_blank" class=" btn btn-primary btn-sm btn-info" 
+                        href="https://github.com/itsjaikumar/elearn">Download Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>   
